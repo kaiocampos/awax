@@ -185,7 +185,7 @@ header {
 }
 .section_aboutus_left p{
   font-size: 14px;
-  line-height: 25px;
+  line-height: 25pxf;
 }
 .section_aboutus_right{
     width: 520px;
@@ -195,4 +195,29 @@ header {
 .section_aboutus_right img{
     width: 480px;
     box-shadow: 0px 5px 10px #333;
+}
+
+
+.section_services{
+  display: flex;
+  
+}
+.section_service{
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border-right: 1px solid #333;
+}
+.section_service:first-child{
+  border-left: 1px solid #333;
+}
+.section_service h4{
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.section_service p{
+  margin-top: 10px;
+  font-size: 13px;
+  color: #999;
 }
