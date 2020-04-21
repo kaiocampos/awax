@@ -6,6 +6,7 @@
 body{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 15px;
+    overflow-x: hidden;
 }
 header{
     height: 100px;
@@ -107,4 +108,65 @@ header{
     padding: 10px 30px;
     margin-top: 30px;
     border-radius: 20px;
+}
+.banner .sliders-pointer{
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.banner .pointer.active{
+    background-color: #b28756;
+}
+.default{
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section_title,
+.default .section_desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section_title{
+    font-size: 20px;
+    
+}
+.default .section_desc{
+    font-size: 11px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+}
+.default .section_body{
+    max-width: 1140px;
+    margin: auto;
+    background-color: blue;
+}
+.default.light{
+    background: #f7f7f7;
+}
+.default.light .section_title{
+    color: #000;
+}
+.default.dark{
+    background-color: #000;
+}
+.default.dark .section_title{
+    color: #fff;
 }
